@@ -10,7 +10,7 @@ work/module-12-report.md
 work/weekly-status-report.md
 
 ## Spec Commit History
-2f0a179 (HEAD -> main, origin/main, origin/HEAD) initial commit
+2f0a179 initial commit
 
 ## project_spec.md Contents
 # Project Technical Specification
