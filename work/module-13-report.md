@@ -1,23 +1,31 @@
 # Module 13 Completion Report
 
 ## MCP Configuration
+File: `.mcp.json`
+
 ```json
-{ 
-  "servers": { 
-    "echo-windows": { 
-      "command": "powershell", 
-      "args": ["-ExecutionPolicy", "Bypass", "-File", "./path/to/mcp-echo.ps1"] 
-    }  
-  }  
-}  
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest", "--no-usage-statistics"]
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
+}
 ```
 
 ## Configured Servers
-- echo-windows
+- chrome-devtools
+- everything
 
 ## MCP Tool Test
-- Tool used: mcp_pylance_mcp_s_pylanceWorkspaceRoots
+- Tool used: mcp_chrome_devtoo_list_pages (chrome-devtools)
 - Output:
 ```text
-Available Workspace roots: file:///Users/Kalyan_Navpute/hello-genai
+## Pages
+1: about:blank [selected]
 ```
